@@ -14,11 +14,15 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools)
 
 set(TS_FILES AntennaSim_en_US.ts)
 
+set(SRC_DIR_PATH src/src)
+set(INC_DIR_PATH src/include)
+set(SRC_PATH src)
+
 set(PROJECT_SOURCES
-        main.cpp
-        mainwindow.cpp
-        mainwindow.h
-        mainwindow.ui
+        ${SRC_DIR_PATH}/main.cpp
+        ${SRC_DIR_PATH}/mainwindow.cpp
+        ${INC_DIR_PATH}/mainwindow.h
+        ${SRC_DIR_PATH}/mainwindow.ui
         ${TS_FILES}
 )
 
